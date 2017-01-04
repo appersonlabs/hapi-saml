@@ -9,7 +9,7 @@
 
 This plugin based on [passport-saml](https://github.com/bergie/passport-saml).
 
-Please, check original repository and specs for clear understanding
+Please, check original repository and specs for clear understanding.
 
 
 ## Getting Started
@@ -18,7 +18,7 @@ Please, check original repository and specs for clear understanding
 npm install hapi-saml-sso --save
 ```
 
-Add the plugin into your app and set following options
+Add the plugin into your app and set following options:
 
 ```javascript
 const Hapi = require('hapi');
@@ -60,6 +60,11 @@ server.register(plugins, (err) => {
 });
 
 ```
+
+Plugin has already implemented SSO callback.
+For correct work you have to implement on your side [hapi server method](https://hapijs.com/tutorials/server-methods)
+that called `request.server.methods.login` otherwise You can use your callback implementation.
+
 
 For understanding options check following links:
 
