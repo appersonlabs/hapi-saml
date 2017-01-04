@@ -1,6 +1,6 @@
 # hapi-saml-sso
 
-![Logo]()
+![Logo](https://bytebucket.org/archik/hapi-saml-sso/raw/18cda20dfdc3bae6eed4b691202ce076a8d80f21/media/logo.png)
 
 > hapi-saml-sso is a [hapi.js](https://hapijs.com/) plugin, it will use the [passport-saml](https://github.com/bergie/passport-saml) library and provide possibility to implement Single Sign On in your app using SAML protocol
 
@@ -61,9 +61,20 @@ server.register(plugins, (err) => {
 
 ```
 
-Plugin has already implemented SSO callback.
+Plugin provide following SSO API:
+```
+GET  /saml/metadata.xml
+GET  /saml/login
+GET  /saml/logout
+```
+
+Also plugin has already implemented SSO callback
+```
+POST /saml/callback
+```
 For correct work you have to implement on your side [hapi server method](https://hapijs.com/tutorials/server-methods)
-that called `request.server.methods.login` otherwise You can use your callback implementation.
+that called `request.server.methods.login`, it will use `Profile.nameID` for identify specific user.
+Otherwise You can use your callback implementation.
 
 
 For understanding options check following links:
@@ -80,7 +91,7 @@ For understanding options check following links:
 ## Spec references
 
 * [OASIS](http://docs.oasis-open.org/security/saml/Post2.0/sstc-saml-tech-overview-2.0.html)
-* [SAML](saml.xml.org)
+* [SAML](http://saml.xml.org)
 
 ## License
 Copyright (c) 2016 archik
