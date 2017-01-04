@@ -72,17 +72,17 @@ Also plugin has already implemented SSO callback
 ```
 POST /saml/callback
 ```
+
 For correct work you have to implement on your side [hapi server method](https://hapijs.com/tutorials/server-methods)
 that called `request.server.methods.login`, it will use `Profile.nameID` for identify specific user.
-Otherwise You can use your callback implementation.
 
+Otherwise You can use your callback implementation.
 
 For understanding options check following links:
 
 + [SAML](https://en.wikipedia.org/wiki/Security_Assertion_Markup_Language)
 + [IDP](https://en.wikipedia.org/wiki/Identity_provider)
 + [Web Browser SSO](https://en.wikipedia.org/wiki/Single_sign-on)
-
 
 ## Credits
 
