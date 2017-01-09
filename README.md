@@ -1,6 +1,6 @@
 # hapi-saml-sso
 
-![Logo](https://bytebucket.org/archik/hapi-saml-sso/raw/18cda20dfdc3bae6eed4b691202ce076a8d80f21/media/logo.png)
+![Logo](https://bytebucket.org/archik/hapi-saml-sso/raw/7a19b50d275bf1fb85499f67f5b913ba6e4f76aa/media/logo.png)
 
 > hapi-saml-sso is a [hapi.js](https://hapijs.com/) plugin, it will use the [passport-saml](https://github.com/bergie/passport-saml) library and provide possibility to implement Single Sign On in your app using SAML protocol
 
