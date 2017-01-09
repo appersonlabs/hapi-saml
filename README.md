@@ -75,6 +75,7 @@ POST /saml/callback
 
 For correct work you have to implement on your side [hapi server method](https://hapijs.com/tutorials/server-methods)
 that called `request.server.methods.login`, it will use `Profile.nameID` for identify specific user.
+On client side you can check local storage variable `SAMLLoggedIn` for auth detecting.
 
 Otherwise You can use your callback implementation.
 

@@ -1,6 +1,6 @@
 {
   "name": "hapi-saml-sso",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "SAML endpoints",
   "main": "lib/plugin.js",
   "scripts": {
@@ -10,7 +10,7 @@
     "type": "git",
     "url": "https://archik@bitbucket.org/archik/hapi-saml-sso.git"
   },
-  "keywords": ["saml", "hapi", "sso","xml","idp"],
+  "keywords": ["saml", "hapi", "sso","xml","idp", "oasis"],
   "author": {
     "name": "Artur Basak",
     "email": "artur.basak@instinctools.ru"
@@ -27,5 +27,9 @@
   },
   "devDependencies": {
     "hapi": "16.1.0"
+  },
+  "engines": {
+    "node": ">=6.9.1",
+    "npm": ">=3.10.8"
   }
 }
